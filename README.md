@@ -1,2 +1,2 @@
 # PetsShop
-https://omar-lamprea.github.io/PetsShop/#categorias
+https://omar-lamprea.github.io/PetsShop
