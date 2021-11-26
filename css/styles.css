@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+  color: #3C2313;
+}
+header{
+  position: sticky;
+  top: 0;
+}
+
+.barra-top{
+  background-color:#222222;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: .5rem 3rem;
+  
+}
+.header{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #F0A83E;
+  padding: .5rem 2rem;
+  color: white;
+}
+.title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .5rem 0;
+}
+nav ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav ul li{
+  margin: 0 1rem;
+  color: #fff;
+}
+select{
+  background: #222222;
+  color: #fff;
+  border: none;
+}
+
+
+.nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav a{
+  text-decoration: none;
+  color: #fff;
+}
+.nav a:hover{
+  color: #8A8787;
+}
+
+.banner{
+  background-image: url('../img/bowl-and-pet-daities-on-green-background.png');
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-size:cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0 5rem;
+  text-align: center;
+}
+.banner-title{
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: .5rem;
+  font-size: 40px;
+}
+
+.text-banner p{
+  margin: 1rem auto;
+}
+.banner-button{
+  background-color: #F0A83E;
+  color: #fff;
+  padding: 1rem;
+  border-radius: .5rem;
+  margin: 1rem 0;
+  width: fit-content;
+}
+.productos-title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+}
+.productos-title h2{
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.productos{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.productos article{
+  text-align: center;
+  margin:15px;
+  background-color: #FBFAF5;
+}
+.precio-producto{
+  color: #F0A83E;
+  font-weight: bold;
+}
+
+
+.contacto, .contacto form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.contacto input{
+  margin: 5px;
+  border: none;
+  background-color: #3C2313;
+  color: #fff;
+  width: 340px;
+  padding: 1rem;
+  border-radius: 20px;
+}
+.contacto input::placeholder{
+  color: #fff;
+}
+
+.btns-form{
+  margin-top: 25px;
+}
+.btns-form button{
+  border-radius: 10px;
+  border:none;
+  padding: 5px 15px;
+  cursor: pointer;
+  background-color: #8A8787;
+  color: #fff;
+}
+.btns-form .enviar{
+  background-color: #F0A83E;
+}
+
+.suscripcion{
+  display: flex;
+  justify-content: space-between;
+  background-color: #F0A83E;
+  padding: .5rem 2rem;
+}
+
+.suscripcion .suscripcion-title{
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.suscripcion .suscripcion-title p{
+  margin: 0 10px;
+}
+.suscripcion form{
+  display: flex;
+  align-items: center;
+}
+
+.suscripcion form input, .suscripcion form button{
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  margin: 0 5px;
+}
+.suscripcion form input{
+  width: 271px;
+}
+.suscripcion form button{
+  background-color: #3C2313;
+  color: #fff;
+  cursor: pointer;
+}
+.iconos-contacto{
+  background-color: #3C2313;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5rem 2rem;
+}
+.iconos-contacto li{
+  display: flex;
+  margin-top: 20px;
+}
+.iconos-contacto li img{
+  margin: 0 30px;
+}
+
+footer .derechos{
+  background-color: #222222;
+  color: #fff;
+  padding: 3px 0;
+}
+
+.hidden{
+  display: none;
+}
+
+
+@media screen and (max-width:768px) {
+  .banner{
+    padding: 0 2rem;
+  }
+  .suscripcion{
+    flex-direction: column;
+  }
+  .suscripcion form{
+    justify-content: center;
+  }
+  .suscripcion form input{
+    width: 100%;
+  }
+  .text-banner{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  .text-banner p{
+    margin: .5rem 0;
+  }
+  nav ul{
+    display: none;
+  }
+  .hidden{
+    display: block;
+  }
+}
+
+@media screen and (max-width:420px) {
+  .text-banner p:nth-child(1){
+    font-size: 2rem;
+  }
+  .iconos-contacto{
+    flex-direction: column-reverse;
+  }
+}
